@@ -4,7 +4,7 @@ import protobuf from "protobufjs";
 const { Buffer } = require("buffer/");
 
 function Stock() {
-        const[stock, setStock] = useState(null);
+  const [stock, setStock] = useState(null);
 
   useEffect(() => {
     const ws = new WebSocket("wss://streamer.finance.yahoo.com");
@@ -19,7 +19,7 @@ function Stock() {
         console.log("connected");
         ws.send(
           JSON.stringify({
-            subscribe: ["PETR4.SA"],
+            subscribe: ["GME"],
           })
         );
       };
@@ -30,13 +30,20 @@ function Stock() {
 
       ws.onmessage = function incoming(message) {
         const next = Yaticker.decode(new Buffer(message.data, "base64"));
-        setStock(next)
+        setStock(next);
       };
     });
   }, []);
-  return <div className={styles.Stock}>
-        {stock && <h2>{stock.id}: {stock.price}</h2>}
-  </div>;
+
+  return (
+    <div className={styles.stock}>
+      {stock && (
+        <h2>
+          {stock.id}: {stock.price}
+        </h2>
+      )}
+    </div>
+  );
 }
 
 export default Stock;

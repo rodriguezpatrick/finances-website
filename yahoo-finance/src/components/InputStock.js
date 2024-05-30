@@ -2,10 +2,6 @@
 import styles from "./InputStock.module.css";
 
 function InputStock() {
-  //   const inputStock = document.getElementsByClassName("inputStockName")[0];
-  //   const addButton = document.getElementsByClassName("button")[0];
-  //   const list = document.getElementsByClassName("stockList")[0];
-
   return (
     <div>
       <input
