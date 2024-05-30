@@ -15,6 +15,7 @@ function InputStock() {
       }
   }
 
+
   return (
     <div>
       <input
