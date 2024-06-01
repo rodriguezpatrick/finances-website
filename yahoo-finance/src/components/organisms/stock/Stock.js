@@ -19,7 +19,7 @@ function Stock() {
         console.log("connected");
         ws.send(
           JSON.stringify({
-            subscribe: ["PETR4.SA"],
+            subscribe: ["GME"],
           })
         );
       };

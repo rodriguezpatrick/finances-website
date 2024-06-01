@@ -1,6 +1,6 @@
 import "./App.css";
-import Stock from "./components/Stock";
-import InputStock from "./components/inputStock";
+import Stock from "./components/organisms/stock/Stock";
+import InputStock from "./components/organisms/inputStock/inputStock";
 
 function App() {
   return (
