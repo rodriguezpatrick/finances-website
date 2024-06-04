@@ -1,0 +1,14 @@
+.inputButton {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.02rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    padding: 0.65rem 2.5rem;
+    color: white;
+    box-shadow: 0 0.21rem 0.8rem rgba(0, 0, 0, 0.15);
+    border: 0;
+    background-color: black;
+    cursor: pointer;
+  }

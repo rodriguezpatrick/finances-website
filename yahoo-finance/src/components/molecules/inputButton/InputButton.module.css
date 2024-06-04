@@ -1,0 +1,9 @@
+.containerInputButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 1.6rem;
+    gap: 1.6rem;
+}
+
